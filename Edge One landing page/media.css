@@ -1,0 +1,151 @@
+
+
+/* max width 1400px = 1400/16px = 87.5em */
+@media screen and (max-width: 87.5em ){
+
+    /* 9/16px = 56.25% */
+    html {
+        font-size: 56.25%;
+    }
+
+    .section-services .section-image img {
+        width: 80%;
+    }
+}
+
+
+/* max width 1200px = 1200/16px = 75em */
+@media screen and (max-width: 75em ){
+
+    /* 7/16px = 43.75% */
+    html {
+        font-size: 43.75%;
+    }
+
+    .section-services .section-image img {
+        width: 90%;
+    }
+}
+
+
+/* max width 900px = 900/16px = 56.25em */
+@media screen and (max-width: 56.25em ){
+
+    /* 6/16px = 37.5% */
+    html {
+        font-size: 37.5%;
+    }
+
+    .section-about .section-image img {
+        width: 100%;
+    }
+
+    .section-services .section-image img {
+        width: 100%;
+    }
+    
+}
+
+/* max width 500px = 500/16px = 31.25em */
+@media screen and (max-width: 31.25em ){
+
+    /* 6/16px = 37.5% */
+    html {
+        font-size: 37.5%;
+    }
+
+    .section-hero, .section-about, .section-services {
+        height: 100%;
+    }
+
+    .section-hero > .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero > .section-body, .section-hero > .section-image  {
+        height: 50%;
+        width: 100%;
+    }
+
+
+    .section-about > .grid {
+        grid-template-columns: 1fr;
+    }
+
+ 
+    .section-image {
+        width: 100%;
+        height: 50vh !important; 
+    }
+
+    .section-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover !important;
+    }
+
+    .section-about .section-image{
+        position:static;
+    }
+
+    .section-about .section-image img{
+        height: 100% !important;
+        background: var(--white-color);
+        position:static;
+        transform: none;
+    }
+
+
+    .section-services > .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-services .section-image{
+        position:static;
+    }
+
+    .section-services .section-image img{
+        height: 100% !important;
+        background: var(--white-color);
+        position:static;
+        transform: none;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .profiles {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+    .social-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .profile-name {
+        font-size: 4rem;
+    }
+
+    .section-contact > .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts {
+        flex-direction: row;
+    }
+
+    .form-field input, .form-field textarea {
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+}
